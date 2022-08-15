@@ -12,6 +12,7 @@ jobs:
         with:
           python-version: 3.9
       - run: pip install mkdocs-material
-      - run: cd keystone-docs
-      - run: mkdocs gh-deploy --force
+      - run: |
+          cd keystone-docs
+          mkdocs gh-deploy --force
 
