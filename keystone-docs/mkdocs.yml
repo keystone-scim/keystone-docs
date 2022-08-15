@@ -1,0 +1,35 @@
+site_name: Keystone Documentation
+nav:
+    - Getting Started: index.md
+    - Configuration:
+      - Intro: configuration/index.md
+      - PostgreSQL: configuration/postgresql.md
+      - Azure Cosmos DB: configuration/azure-cosmos-db.md
+      - Mongo DB: configuration/mongodb.md
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+repo_url: https://github.com/yuvalherziger/keystone 
+repo_name: yuvalherziger/keystone
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  logo: assets/img/logo.png
+  favicon: assets/img/logo.png
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: indigo
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: indigo
+
+    
+  
