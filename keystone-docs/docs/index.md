@@ -27,4 +27,4 @@ a network location that your *Keystone* container can reach.
 
   * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
   * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
-  * An in-memory for **testing purposes only**.
+  * An in-memory store for **testing purposes only**.
