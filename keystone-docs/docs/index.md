@@ -1,12 +1,6 @@
-# Getting Started
+# Welcome to Keystone
 
 Welcome to the official *Keystone* Documentation site.
-
-!!! warning "Pre-release"
-
-    *Keystone* is in a pre-release stage, and as such, its documentation
-    is missing everything you need to know before you can configure a
-    *Keystone* container. Stay tuned for its first major release (0.1.0)!
 
 ## What's Keystone?
 
@@ -28,3 +22,25 @@ a network location that your *Keystone* container can reach.
   * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
   * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
   * An in-memory store for **testing purposes only**.
+
+*Keystone* is slated to support the following data stores, in descending order of implementation
+priority:
+
+  * MongoDB
+  * Azure AD B2C Tenants
+  * MySQL
+  * Redis
+  * Microsoft SQL
+
+## Supported Authentication Methods
+
+While the SCIM 2.0 protocol itself
+[doesn't define SCIM-specific scheme for authentication](https://datatracker.ietf.org/doc/html/rfc7644#section-2),
+most prominent identity managers allow you to specify a bearer token that they'll use in the `Authorization` HTTP header in their requests against SCIM 2.0 APIs.
+
+*Keystone* currently allows you to specify that secret bearer token in two places:
+
+* In an [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) secret.
+* In an environment variable (`AUTHENTICATION_SECRET`).
+
+Read more on [how to configure *Keystone*](./configuration.md) to use either authentication methods.

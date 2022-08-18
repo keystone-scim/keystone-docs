@@ -1,7 +1,9 @@
 site_name: Keystone Documentation
 nav:
-    - Getting Started: index.md
-    - Configuring Keystone: configuration
+    - Welcome: index.md
+    - Configuration Reference: configuration.md
+    - PostgerSQL Store: postgresql.md
+    - Cosmos DB Store: azure-cosmos-db.md
 markdown_extensions:
   - tables
   - admonition
