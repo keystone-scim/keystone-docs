@@ -34,24 +34,32 @@ be passed to the container using environment variables.
 
 ## Configuration Reference
 
-| Key                                     | Description                                                                          | Default                |
-| --------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------- |
-| `store.type`                            | Storage type. Supported values: `PostgreSQL`, `CosmosDB`, `InMemory`                 | `InMemory`             |
-| `store.pg_host`                         | PostgeSQL server's hostname, if using a PostgeSQL store                              | `localhost`            |
-| `store.pg_port`                         | Port to use, if using a PostgeSQL store                                              | `5432`                 |
-| `store.pg_ssl_mode`                     | Connection SSL mode, if using a PostgeSQL store                                      | `require`              |
-| `store.pg_username`                     | Username for authentication, if using a PostgeSQL store                              | -                      |
-| `store.pg_password`                     | Password for authentication, if using a PostgeSQL store                              | -                      |
-| `store.pg_database`                     | The PostgreSQL database name, if using a PostgeSQL store                             | `postgers`             |
-| `store.pg_schema`                       | The PG schema, if using a PostgeSQL store                                            | `public`               |
-| `store.tenant_id`                       | Azure Tenant ID, if using a Cosmos DB store with Client Secret Credentials auth.     | -                      |
-| `store.client_id`                       | Azure Client ID, if using a Cosmos DB store with Client Secret Credentials auth.     | -                      |
-| `store.secret`                          | Azure Client Secret, if using a Cosmos DB store with Client Secret Credentials auth. | -                      |
-| `store.cosmos_account_uri`              | Cosmos Account URI, if using a Cosmos DB store                                       | -                      |
-| `store.cosmos_account_key`              | Cosmos DB account key, if using a Cosmos DB store with Account Key auth.             | -                      |
-| `store.cosmos_db_name`                  | Cosmos DB database name, if using a Cosmos DB store                                  | `scim_2_identity_pool` |
-| `authentication.secret`                 | Plain secret bearer token                                                            | -                      |
-| `authentication.akv.vault_name`         | AKV name, if bearer token is stored in AKV.                                          | -                      |
-| `authentication.akv.secret_name`        | AKV secret name, if bearer token is stored in AKV.                                   | `scim-2-api-token`     |
-| `authentication.akv.credentials_client` | Credentials client type, if bearer token is stored in AKV.                           | `default`              |
-| `authentication.akv.force_create`       | Try to create an AKV secret on startup, if bearer token to be stored in AKV.         | `false`                |
+| Key                                     | Description                                                                          | Type | Default                |
+| --------------------------------------- | ------------------------------------------------------------------------------------ | ---- | ---------------------- |
+| `store.type`                            | Storage type. Supported values: `PostgreSQL`, `CosmosDB`, `InMemory`                 | str  | `InMemory`             |
+| `store.pg.host`                         | PostgeSQL server's hostname, if using a PostgeSQL store                              | str  | `localhost`            |
+| `store.pg.port`                         | Port to use, if using a PostgeSQL store                                              | int  | `5432`                 |
+| `store.pg.ssl_mode`                     | Connection SSL mode, if using a PostgeSQL store                                      | str  | `require`              |
+| `store.pg.username`                     | Username for authentication, if using a PostgeSQL store                              | str  | -                      |
+| `store.pg.password`                     | Password for authentication, if using a PostgeSQL store                              | str  | -                      |
+| `store.pg.database`                     | The PostgreSQL database name, if using a PostgeSQL store                             | str  | `postgers`             |
+| `store.pg.schema`                       | The PG schema, if using a PostgeSQL store                                            | str  | `public`               |
+| `store.cosmos.tenant_id`                | Azure Tenant ID, if using a Cosmos DB store with Client Secret Credentials auth.     | str  | -                      |
+| `store.cosmos.client_id`                | Azure Client ID, if using a Cosmos DB store with Client Secret Credentials auth.     | str  | -                      |
+| `store.cosmos.client_secret`            | Azure Client Secret, if using a Cosmos DB store with Client Secret Credentials auth. | str  | -                      |
+| `store.cosmos.account_uri`              | Cosmos Account URI, if using a Cosmos DB store                                       | str  | -                      |
+| `store.cosmos.account_key`              | Cosmos DB account key, if using a Cosmos DB store with Account Key auth.             | str  | -                      |
+| `store.cosmos.db_name`                  | Cosmos DB database name, if using a Cosmos DB store                                  | str  | `scim_2_identity_pool` |
+| `store.mongo.host`                      | MongoDB server hostname, if using a MongoDB store.                                   | str  | -                      |
+| `store.mongo.port`                      | Port to use, if using a MongoDB store.                                               | int  | `27017`                |
+| `store.mongo.username`                  | Username for authentication, if using a MongoDB store.                               | str  | -                      |
+| `store.mongo.password`                  | Password for authentication, if using a MongoDB store.                               | str  | -                      |
+| `store.mongo.tls`                       | TLS mode, if using a MongoDB store.                                                  | bool | `true`                 |
+| `store.mongo.replica_set`               | Cosmos DB Replica Set, if using a Cosmos DB store.                                   | str  | -                      |
+| `store.mongo.database`                  | Database name,  if using a Cosmos DB store.                                          | str  | `scim2Db`              |
+| `store.mongo.dsn`                       | Cosmos DB DSN, ignoring all other connection params (except `store.mongo.database`)  | str  | -                      |
+| `authentication.secret`                 | Plain secret bearer token                                                            | str  | -                      |
+| `authentication.akv.vault_name`         | AKV name, if bearer token is stored in AKV.                                          | str  | -                      |
+| `authentication.akv.secret_name`        | AKV secret name, if bearer token is stored in AKV.                                   | str  | `scim-2-api-token`     |
+| `authentication.akv.credentials_client` | Credentials client type, if bearer token is stored in AKV.                           | str  | `default`              |
+| `authentication.akv.force_create`       | Try to create an AKV secret on startup, if bearer token to be stored in AKV.         | bool | `false`                |

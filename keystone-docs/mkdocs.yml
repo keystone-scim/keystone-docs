@@ -1,14 +1,20 @@
 site_name: Keystone Documentation
 nav:
     - Welcome: index.md
+    - Getting Started: getting-started.md
     - Configuration Reference: configuration.md
     - PostgerSQL Store: postgresql.md
+    - MongoDB Store: mongodb.md
     - Cosmos DB Store: azure-cosmos-db.md
 markdown_extensions:
   - tables
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: "!!python/name:pymdownx.superfences.fence_code_format"
 repo_url: https://github.com/keystone-scim/keystone
 repo_name: keystone-scim/keystone
 theme:

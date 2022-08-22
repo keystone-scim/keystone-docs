@@ -1,6 +1,6 @@
 # Welcome to Keystone
 
-Welcome to the official *Keystone* Documentation site.
+Welcome to the official *Keystone* Documentation.
 
 ## What's Keystone?
 
@@ -9,6 +9,9 @@ Whether you're using one of the prominent cloud identity managers such as
 Azure Active Directory, Okta, Auth0, etc., or another identity provider that supports
 automatic provisioning with SCIM 2.0, you can use *Keystone* to quickly store
 the state of directory in a [data store](#supported-data-store).
+
+![High level diagram](assets/img/how-it-works.png)
+
 
 ## Supported Data Store
 
@@ -21,6 +24,7 @@ a network location that your *Keystone* container can reach.
 
   * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
   * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
+  * [MongoDB](https://www.mongodb.com/docs/) (version 3.6 or higher)
   * An in-memory store for **testing purposes only**.
 
 *Keystone* is slated to support the following data stores, in descending order of implementation
