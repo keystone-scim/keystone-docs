@@ -25,6 +25,7 @@ be passed to the container using environment variables.
   *Keystone* currently allows you to use one of the following storage layers:
     * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
     * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
+    * [MongoDB](https://www.mongodb.com/docs/) (version 3.6 or higher)
     * An in-memory store for **testing purposes only**.
 
 * **Choose the token retrieval method:**
