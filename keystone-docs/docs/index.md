@@ -30,11 +30,11 @@ a network location that your *Keystone* container can reach.
 *Keystone* is slated to support the following data stores, in descending order of implementation
 priority:
 
-  * MongoDB
   * Azure AD B2C Tenants
   * MySQL
   * Redis
   * Microsoft SQL
+  * AWS DynamoDB
 
 ## Supported Authentication Methods
 
