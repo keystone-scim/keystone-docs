@@ -20,6 +20,8 @@ jobs:
           git config --global user.email docs@dummy.bot.com
       - name: Release docs website and API reference
         run: |
+          git config --global user.name Docs Deploy
+          git config --global user.email docs@deploy.com
           cd keystone-docs
           mike deploy --push --update-aliases "${{  github.ref_name }}" latest
-          mike set-default --force --push latest
+          mike set-default --push latest
