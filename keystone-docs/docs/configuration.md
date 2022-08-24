@@ -26,6 +26,7 @@ be passed to the container using environment variables.
     * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
     * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
     * [MongoDB](https://www.mongodb.com/docs/) (version 3.6 or higher)
+    * [MySQL](https://dev.mysql.com/) (version 5.7.8 or higher)
     * An in-memory store for **testing purposes only**.
 
 * **Choose the token retrieval method:**
@@ -43,8 +44,14 @@ be passed to the container using environment variables.
 | `store.pg.ssl_mode`                     | Connection SSL mode, if using a PostgeSQL store                                      | str  | `require`              |
 | `store.pg.username`                     | Username for authentication, if using a PostgeSQL store                              | str  | -                      |
 | `store.pg.password`                     | Password for authentication, if using a PostgeSQL store                              | str  | -                      |
-| `store.pg.database`                     | The PostgreSQL database name, if using a PostgeSQL store                             | str  | `postgers`             |
+| `store.pg.database`                     | The PostgreSQL database name, if using a PostgeSQL store                             | str  | `postgres`             |
 | `store.pg.schema`                       | The PG schema, if using a PostgeSQL store                                            | str  | `public`               |
+| `store.mysql.host`                      | MySQL server's hostname, if using a MySQL store                                      | str  | `localhost`            |
+| `store.mysql.port`                      | Port to use, if using a MySQL store                                                  | int  | `3306`                 |
+| `store.mysql.ssl`                       | Connection SSL mode, if using a MySQL store                                          | str  | `require`              |
+| `store.mysql.username`                  | Username for authentication, if using a MySQL store                                  | str  | -                      |
+| `store.mysql.password`                  | Password for authentication, if using a MySQL store                                  | str  | -                      |
+| `store.mysql.database`                  | The MySQL database name, if using a MySQL store                                      | str  | `mysql`                |
 | `store.cosmos.tenant_id`                | Azure Tenant ID, if using a Cosmos DB store with Client Secret Credentials auth.     | str  | -                      |
 | `store.cosmos.client_id`                | Azure Client ID, if using a Cosmos DB store with Client Secret Credentials auth.     | str  | -                      |
 | `store.cosmos.client_secret`            | Azure Client Secret, if using a Cosmos DB store with Client Secret Credentials auth. | str  | -                      |

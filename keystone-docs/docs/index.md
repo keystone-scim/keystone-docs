@@ -26,13 +26,13 @@ a network location that your *Keystone* container can reach.
   * [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
   * [PostgreSQL](https://www.postgresql.org) (version 10 or higher)
   * [MongoDB](https://www.mongodb.com/docs/) (version 3.6 or higher)
+  * [MySQL](https://dev.mysql.com/) (version 5.7.8 or higher)
   * An in-memory store for **testing purposes only**.
 
 *Keystone* is slated to support the following data stores, in descending order of implementation
 priority:
 
   * Azure AD B2C Tenants
-  * MySQL
   * Redis
   * Microsoft SQL
   * AWS DynamoDB

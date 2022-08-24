@@ -6,6 +6,7 @@ nav:
     - PostgerSQL Store: postgresql.md
     - MongoDB Store: mongodb.md
     - Cosmos DB Store: azure-cosmos-db.md
+    - MySQL Store: mysql.md
 extra:
   version:
     provider: mike
