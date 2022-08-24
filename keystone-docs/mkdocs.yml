@@ -1,4 +1,4 @@
-site_name: Keystone Documentation
+site_name: Keystone
 nav:
     - Welcome: index.md
     - Getting Started: getting-started.md
@@ -6,6 +6,9 @@ nav:
     - PostgerSQL Store: postgresql.md
     - MongoDB Store: mongodb.md
     - Cosmos DB Store: azure-cosmos-db.md
+extra:
+  version:
+    provider: mike
 markdown_extensions:
   - tables
   - admonition
