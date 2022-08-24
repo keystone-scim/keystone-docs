@@ -22,4 +22,4 @@ jobs:
         run: |
           cd keystone-docs
           mike deploy --push --update-aliases "${{  github.ref_name }}" latest
-          mike set-default --push latest
+          mike set-default --force --push latest
