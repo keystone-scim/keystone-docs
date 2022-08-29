@@ -28,7 +28,7 @@ Create a file and call it `keystone_config.yaml`
 
 ```yaml
 store:
-  pg:
+  mysql:
     host: mysql.server.com
     port: 3306
     username: keystoneuser

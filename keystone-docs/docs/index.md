@@ -12,8 +12,6 @@ the state of directory in a [data store](#supported-data-store).
 
 ![High level diagram](assets/img/how-it-works.png)
 
-Hello, again!
-
 ## Supported Data Store
 
 As *Keystone* is an entirely stateless workload, it expects you to bring your own
