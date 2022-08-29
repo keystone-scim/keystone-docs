@@ -1,6 +1,6 @@
 # MySQL Store
 
-![Keystone MySQL](./assets/img/keysyone_mysql.png)
+![Keystone MySQL](./assets/img/keystone_mysql.png)
 
 ## Overview
 
